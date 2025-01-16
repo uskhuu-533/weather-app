@@ -38,18 +38,19 @@ const SearchBar = (props) => {
   }, []);
   const handleChangeCity = (city) => {
     SetSelctedCity(city);
+    setSearchValue('')
   };
   useEffect(() => {
     if (searchValue == "") {
       SetData([]);
     } else {
       const filtered = countries.filter((el) =>
-        el.toUpperCase().includes(searchValue.toUpperCase())
+        el.toUpperCase().startsWith(searchValue.toUpperCase())
       );
       SetData(filtered);
     }
   }, [searchValue]);
-  filteredData.length = 4;
+  filteredData.length = 10;
   return (
     <div className="fixed mt-[10vh] ml-[15%] w-1/2 ">
       <div className="relative w-3/5 mt-[-70px] flex items-center">
