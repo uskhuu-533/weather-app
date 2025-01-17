@@ -48,7 +48,7 @@ const AirQuality = (props) => {
      setNO2Index({color:"gradient-to-bl from-orange-600 to-yellow-400", text:"Unhealthy"});
    }
     else if (no2 <= 150 && no2 > 55) {
-     setNO2Index({color:"gradient-to-bl from-red-600 to-orange-500", text:"Unhealthy"});
+     setNO2Index({color:"from-red-600 to-orange-500", text:"Unhealthy"});
    }
     else if (no2 <= 250 && no2 > 150) {
      setNO2Index({color:"gradient-to-bl from-red-600 to-orange-500", text:"Unhealthy"});
@@ -120,7 +120,7 @@ const AirQuality = (props) => {
 
   useEffect(()=>{
     changeColor()
-  },[pm2_5])
+  },[])
   return (
     <div className="grid grid-cols-2 w-full h-[90%] gap-2 p-5">
       <div
@@ -128,7 +128,7 @@ const AirQuality = (props) => {
       >
         CO: {CO}
       </div>
-      <div className={`flex font-extra-bold flex-wrap justify-center items-center bg-${no2color.color} rounded-3xl flex-col `}>
+      <div className={`flex font-extra-bold flex-wrap justify-center items-center bg-gradient-to-bl ${no2color.color} rounded-3xl flex-col `}>
         <p>NO2: {no2}</p> 
         <p>{no2color.text}</p>
       </div>
