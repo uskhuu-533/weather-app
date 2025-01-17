@@ -1,6 +1,7 @@
 const EllipseDay = () => {
   return (
     <svg
+  
       width="176"
       height="176"
       viewBox="0 0 176 176"

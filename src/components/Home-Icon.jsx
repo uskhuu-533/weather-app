@@ -1,7 +1,8 @@
 const HomeIcon = (props) => {
-    const {color} = props
+    const {handlChangeState, filterState, color} = props
   return (
     <svg
+    onClick={()=>handlChangeState("Home")}
       width="32"
       height="32"
       viewBox="0 0 32 32"
