@@ -53,7 +53,7 @@ const Day = (props) => {
   };
    return (
     <div className="w-1/2 h-full min-w-[567px] bg-neutral-100 rounded-tl-3xl rounded-bl-3xl flex flex-col justify-center items-center">
-      <img src="EllipseDay.svg" className="mt-[-40%] ml-[-25%] absolute" />
+       <img src="day/EllipseDay.png" className="absolute top-[5%] left-[9%] w-[176px]" />
 
       {isLoading === false && (
         <div className="w-1/2 h-3/4 backdrop-brightness-20 shadow-lg backdrop-blur-[2px] rounded-3xl flex flex-col items-center gap-6">

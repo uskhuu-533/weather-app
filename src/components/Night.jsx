@@ -54,8 +54,8 @@ const Night = (props) => {
   };
 
   return (
-    <div className="w-1/2 h-full bg-slate-900 rounded-tr-3xl rounded-br-3xl  flex justify-center items-center">
-      <img src="EllipseN.svg" className="absolute mt-[40%] mr-[-25%] w-[8%]" />
+    <div className="w-1/2 h-full bg-[#0F141E] rounded-tr-3xl rounded-br-3xl  flex justify-center items-center">
+      <img src="night/EllipseNight.png" className="absolute bottom-[8%] right-[10%] w-[176px]" />
       {isLoading == false && (
         <div className="w-1/2 h-3/4 backdrop-blur-md bg-bg-slate/75 shadow-xl backdrop-blur-[2px] rounded-3xl flex flex-col items-center gap-6">
         {filterState=="Home" ? (<> <div className="flex justify-between py-12 w-9/12 ">
@@ -68,7 +68,7 @@ const Night = (props) => {
           <img src={icon} className="w-64 shadow-md" />
           <div>
             <p className="text-transparent bg-clip-text font-extrabold text-[110px] -mt-10 bg-gradient-to-b from-white to-black">
-              {temp}
+              {temp}°
             </p>
           </div>
           <div className="w-9/12">

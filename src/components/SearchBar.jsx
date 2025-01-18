@@ -51,7 +51,7 @@ const SearchBar = (props) => {
   }, [searchValue]);
   filteredData.length = 10;
   return (
-    <div className="fixed mt-[10vh] ml-[15%] w-1/2 ">
+    <div className="absolute mt-[10vh] ml-[15%] w-1/2 ">
       <div className="relative w-3/5 mt-[-70px] flex items-center">
         <SearchIcon />
         <input
@@ -69,7 +69,7 @@ const SearchBar = (props) => {
               className="w-full flex hover:bg-gray-100 gap-4 py-3 pl-4"
               onClick={() => handleChangeCity(el.toString())}
             >
-              <LocationIcon />
+              <LocationIcon color={"black"}/>
               <p className="truncate font-bold text-2xl  ">{el} </p>
             </div>
           ))}
