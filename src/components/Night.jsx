@@ -1,9 +1,9 @@
-import LocationIcon from "./Location-icon";
-import HomeIcon from "./Home-Icon";
-import HeartIcon from "./Heart-Icon";
-import UserIcon from "./User-Icon";
+import LocationIcon from "./Icons/Location-icon";
+import HomeIcon from "./Icons/Home-Icon";
+import HeartIcon from "./Icons/Heart-Icon";
+import UserIcon from "./Icons/User-Icon";
 import { useState, useEffect } from "react";
-import Conditions from "./condition";
+import Conditions from "./Condition-Data";
 import Loader from "./Loader";
 import AirQuality from "./Air-Quality";
 const Night = (props) => {

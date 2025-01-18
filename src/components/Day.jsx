@@ -1,23 +1,22 @@
-import SearchBar from "./SearchBar";
-import HomeIcon from "./Home-Icon";
-import LocationIcon from "./Location-icon";
-import HeartIcon from "./Heart-Icon";
-import UserIcon from "./User-Icon";
+import HomeIcon from "./Icons/Home-Icon";
+import LocationIcon from "./Icons/Location-icon";
+import HeartIcon from "./Icons/Heart-Icon";
+import UserIcon from "./Icons/User-Icon";
 import { useEffect, useState } from "react";
-import Conditions from "./condition";
+import Conditions from "./Condition-Data";
 import Loader from "./Loader";
 import AirQuality from "./Air-Quality";
 
 const Day = (props) => {
+  const { selectedCity } = props;
   const [dayTemp, setDayTemp] = useState("");
   const [city, setCity] = useState("Ulaanbaatar");
   const [condition, setCondition] = useState("");
   const [icon, setIcon] = useState("");
   const [isLoading, setIsLoading] = useState(false);
-  const { selectedCity } = props;
-  const API_KEY = "f9703c47bec948389f382511251501";
   const [filterState, setFilterState] = useState("Home");
   const [airQuality, setAirquality]=useState({})
+  const API_KEY = "f9703c47bec948389f382511251501";
   const getWeather = async () => {
     try {
       setIsLoading(true);

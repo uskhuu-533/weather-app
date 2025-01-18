@@ -249,7 +249,7 @@ const  Conditions =[
 		"day" : "Light rain shower",
 		"night" : "Light rain shower",
 		iconDay : "./day/Snow.png",
-        iconNight : "night/Snow.png",
+        iconNight : "night/Rain.png",
 	},
 	{
 		code : 1243,

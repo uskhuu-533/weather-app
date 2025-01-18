@@ -1,7 +1,6 @@
-import SearchIcon from "./Search";
+import SearchIcon from "./Icons/Search";
 import { useEffect, useState } from "react";
-import countriesData from "../Data";
-import LocationIcon from "./Location-icon";
+import LocationIcon from "./Icons/Location-icon";
 const SearchBar = (props) => {
   const { SetSelctedCity } = props;
   const [filteredData, SetData] = useState([]);
